@@ -2,7 +2,7 @@ var cityContainer = document.getElementById("city-info");
 var btn = document.getElementById("btn");
 btn.addEventListener("click", function() {
     var ourRequest = new XMLHttpRequest();
-    ourRequest.open('GET', 'https://govindshiji1.github.io/govindshiiji1/week4/cities1.json');
+    ourRequest.open('GET', 'https://govindshiji1.github.io/govindshiiji1/week-4/cities1.json');
     ourRequest.onload = function() {
         var ourData = JSON.parse(ourRequest.responseText);
         renderHTML(ourData);
